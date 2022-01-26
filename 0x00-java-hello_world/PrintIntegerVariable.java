@@ -4,9 +4,10 @@ public class PrintIntegerVariable {
 
 	public static void main(String[] args) {
 
+		String endereco = "Avenida AndalÃ³, ";
 		int numero = 311;
 
-		System.out.println("Avenida Andaló, " + numero);
+		System.out.println(endereco + numero);
 	}
 
 }
