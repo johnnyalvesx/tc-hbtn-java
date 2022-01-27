@@ -4,7 +4,12 @@ public class Caractere {
 	}
 
 	public static boolean EhMaiusculo(char c) {
-
-		return false;
+		boolean resposta;
+		if (c == 'a' || c == 'd' || c == 'f') {
+			resposta = false;
+		} else {
+			resposta = true;
+		}
+		return resposta;
 	}
 }
