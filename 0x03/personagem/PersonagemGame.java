@@ -1,4 +1,4 @@
 public class PersonagemGame {
-	int saudeAtual = 0;
-	String nome = "";
+	public int saudeAtual = 0;
+	public String nome = "";
 }
