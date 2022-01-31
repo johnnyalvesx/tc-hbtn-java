@@ -1,8 +1,8 @@
 public class PersonagemGame {
 
 	// atributos
-	public int saudeAtual;
-	public String nome;
+	private int saudeAtual = 0;
+	private String nome = "";
 	private String status;
 
 	public PersonagemGame(int saudeAtual, String nome) {
