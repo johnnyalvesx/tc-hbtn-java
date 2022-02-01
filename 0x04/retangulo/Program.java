@@ -16,7 +16,7 @@ public class Program {
 		try {
 			System.out.printf("Area: %f\n", retangulo.area());
 		} catch (Exception e) {
-			System.err.println(e);
+			System.out.println(e);
 		}
 	}
 }
