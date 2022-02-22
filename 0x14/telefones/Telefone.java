@@ -30,6 +30,6 @@ public class Telefone {
 
     @Override
     public String toString() {
-	return "(" + codigoArea + ")" + numero;
+	return "(" + codigoArea + ") " + numero;
     }
 }
