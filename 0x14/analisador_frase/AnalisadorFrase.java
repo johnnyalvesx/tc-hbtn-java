@@ -23,6 +23,7 @@ public class AnalisadorFrase {
 		}
 	    }
 	    map.put(array[contUm].toLowerCase(), total);
+		total = 0;
 	}
 	return map;
     }
