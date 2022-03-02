@@ -2,9 +2,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import pessoa_por_cargo.ConsultaPessoas;
-import pessoa_por_cargo.Pessoa;
-
 public class Program {
     public static void main(String[] args) {
 	Locale.setDefault(new Locale("pt", "BR"));
