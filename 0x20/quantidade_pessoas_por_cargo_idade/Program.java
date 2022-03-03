@@ -4,7 +4,6 @@ import java.util.Map;
 
 public class Program {
     public static void main(String[] args) {
-
 	Locale.setDefault(new Locale("pt", "BR"));
 
 	Pessoa pessoa1 = new Pessoa(1, "John Bannins", "Desenvolvedor", 23, 3200);
@@ -21,11 +20,11 @@ public class Program {
 	List<Pessoa> todasPessoas = List.of(pessoa1, pessoa2, pessoa3, pessoa4, pessoa5, pessoa6, pessoa7, pessoa8,
 		pessoa9, pessoa10);
 
-	Map<String, Long> pessoas1 = ConsultaPessoas.obterContagemPessoasPorCargo(todasPessoas);
-	Map<String, Long> pessoas2 = ConsultaPessoas
-		.obterContagemPessoasPorCargo(List.of(pessoa1, pessoa2, pessoa3, pessoa4, pessoa9, pessoa10));
-	Map<String, Long> pessoas3 = ConsultaPessoas
-		.obterContagemPessoasPorCargo(List.of(pessoa1, pessoa3, pessoa4, pessoa5, pessoa9));
+	Map<String, Map<Integer, Long>> pessoas1 = ConsultaPessoas.obterContagemPessoasPorCargoEIdade(todasPessoas);
+	Map<String, Map<Integer, Long>> pessoas2 = ConsultaPessoas
+		.obterContagemPessoasPorCargoEIdade(List.of(pessoa1, pessoa2, pessoa3, pessoa4, pessoa9, pessoa10));
+	Map<String, Map<Integer, Long>> pessoas3 = ConsultaPessoas
+		.obterContagemPessoasPorCargoEIdade(List.of(pessoa1, pessoa3, pessoa4, pessoa5, pessoa9));
 
 	System.out.println(pessoas1);
 	System.out.println();
